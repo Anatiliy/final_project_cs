@@ -7,13 +7,13 @@
 
 int NaturalNumbers(int m, int n, int result = 0)
 {
-    if (m > n)
+    if (m == n)
     {
       return m;
     }
     else
     {
-      return result = result + NaturalNumbers( m + 1, n);
+      return result = m + NaturalNumbers( m + 1, n, result);
     }
 }
 
@@ -25,4 +25,4 @@ Console.Write("введите N: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
 int naturalnumber = NaturalNumbers(m, n);
-Console.Write(naturalnumber);
+Console.WriteLine(naturalnumber);
