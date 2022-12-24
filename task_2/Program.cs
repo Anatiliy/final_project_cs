@@ -13,7 +13,7 @@ int NaturalNumbers(int m, int n, int result = 0)
     }
     else
     {
-      return result = m + NaturalNumbers( m + 1, n, result);
+      return result = m + NaturalNumbers( m + 1, n);
     }
 }
 
